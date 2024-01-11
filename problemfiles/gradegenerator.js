@@ -1,15 +1,19 @@
-// Students grades classification//
-
-function studentGrades (score){
+// Students grades classification
+function studentGrades(score){
+    let grade;
     if (score>79 && score<101) {
-        return "A";
+        grade="A";
     } else if (score>59 && score<80) {
-        return "B";
+        grade="B";
     } else if (score>49 && score<60) {
-        return "C";
+        grade="C";
     } else if (score>39 && score<50) {
-        return "D";
+        grade="D";
     } else if (score>0 && score<40) {
-        return "E";
+        grade="E";
+    //If the input is outside the 0-100 range;
+    } else {
+        return "Invalid Input";
     }
-}
+        return (grade);
+};
