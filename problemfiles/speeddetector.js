@@ -10,10 +10,11 @@ function carSpeed (speed) {
 
     let speedDetector;
     if (speed<=speedLimit) {
-        return speedDetector = 'Okay';
+        speedDetector = 'Okay';
     } else if (speed>speedLimit) {
-        return speedDetector = `Demerit points: ${pointsDeduction}`;
+        speedDetector = `Demerit points: ${pointsDeduction}`;
     }
     console.log(speedDetector);
 }
 
+carSpeed(51)
